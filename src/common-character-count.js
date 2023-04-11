@@ -15,12 +15,14 @@ function getCommonCharacterCount(s1, s2) {
   const arr1 = s1.split('');
   const arr2 = s2.split('');
   let count = 0;
+
   for (let v of arr2) {
     if (arr1.includes(v)) {
       count++;
       delete arr1[arr1.indexOf(v)];
     }
   }
+  
   return count;
 }
 

@@ -24,6 +24,7 @@ function deleteDigit(n) {
   } else {
     delete result[result.indexOf(min.toString())];
   }
+  
   return +(result.join(''));
 }
 

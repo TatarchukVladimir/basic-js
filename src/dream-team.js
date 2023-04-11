@@ -15,12 +15,16 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 function createDreamTeam(members) {
   if (!Array.isArray(members)) return false
+
   const teamName = [];
   const membersFilter = members.filter(val => typeof val === 'string')
-                              .map(val => val.trim().toUpperCase());
+                              .map(val => val.trim().toUpperCase())
+  ;
+  
   for (val of membersFilter) {
     teamName.push(val[0])
   }
+  
   return teamName.sort().join('');
 }
 

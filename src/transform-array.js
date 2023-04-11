@@ -30,7 +30,7 @@ function transform(arr) {
        newArr[i] = newArr[i + 1];
     }
   }
-  return newArr.filter(v => v !== '--discard-prev' && v !== '--discard-next' && v !== '--double-prev' && v !== '--double-next' && v !== undefined)
+  return newArr.filter(v => v !== '--discard-prev' && v !== '--discard-next' && v !== '--double-prev' && v !== '--double-next' && v !== undefined);
 }
 
 module.exports = {

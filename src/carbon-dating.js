@@ -21,6 +21,7 @@ function dateSample(sampleActivity) {
   if (typeof sampleActivity !== 'string') return false
   if (!+sampleActivity) return false
   if (+sampleActivity <=0 || +sampleActivity > MODERN_ACTIVITY) return false
+  
   return Math.ceil(Math.log(MODERN_ACTIVITY / +sampleActivity) * HALF_LIFE_PERIOD / 0.693);
 }
 

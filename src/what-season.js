@@ -18,7 +18,8 @@ function getSeason(date) {
   return (month < 2 || month > 10) ? 'winter'
                   : (month > 7) ? 'autumn'
                   : (month > 4) ? 'summer'
-                  : 'spring';
+                  : 'spring'
+  ;
 }
 
 module.exports = {
